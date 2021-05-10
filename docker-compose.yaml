@@ -4,7 +4,9 @@ services:
         restart: always
         build: .
         volumes: 
+            # Both of these volume mounts are needed to see code changes in Browser
             - ./:/usr/src/app
+            - /usr/src/app/node_modules
         ports:
             - '4000:4000'
     prometheus:

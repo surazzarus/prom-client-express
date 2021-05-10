@@ -10,9 +10,14 @@ docker compose up
 It will install 3 containers `prom-client-app`, `prometheus` & `grafana`
 
 ## Some features include
-- Auto change the content in node app because of volume mount of whole app inside the container. i.e. `./:/usr/src/app`
+- Auto change the content in node app because of volume mount of whole app inside the container. i.e. 
+````
+volumes: 
+    - ./:/usr/src/app
+    - /usr/src/app/node_modules
+````
 - Installed nodemon inside Dockerfile as global installation 
-- Docker-Compose to build and run 3 services.
+- Docker Compose to build and run 3 services.
     - prom-client-express (nodejs app)
     - prometheus
     - grafana
