@@ -2,6 +2,11 @@
 
 Ref from: https://betterprogramming.pub/node-js-application-monitoring-with-prometheus-and-grafana-b08deaf0efe3
 
+````
+NOTE: For the url use as follows based on the operation system. 
+For MAC --> http://docker.for.mac.host.internal
+For Linux --> http://localhost 
+````
 
 Be in the root folder of the project and run:
 ````
